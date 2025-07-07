@@ -1,0 +1,9 @@
+# Mac system
+.DS_Store
+
+# Node dependencies
+node_modules
+
+# Parcel output
+.parcel-cache
+dist
