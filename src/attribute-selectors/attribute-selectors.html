@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Attribute Selectors Demo</title>
+  <style>
+    /* 1. [attr] - have alt attribute */
+    img[alt] {
+      border: 2px dashed green;
+    }
+
+    /* 2. [attr="value"] - class="dog" */
+    p[class="dog"] {
+      color: red;
+      font-weight: bold;
+    }
+
+    /* 3. [attr~="value"] - class chứa từ 'cute' trong chuỗi cách nhau bằng khoảng trắng */
+    div[class~="cute"] {
+      background-color: pink;
+    }
+
+    /* 4. [attr^="https"] - href bắt đầu bằng "https" */
+    a[href^="https"] {
+      color: green;
+    }
+
+    /* 5. [attr*="tube"] - href có chứa chữ "tube" ở đâu đó */
+    a[href*="tube"] {
+      text-decoration: underline;
+      color:bisque;
+    }
+
+    /* 6. [attr$=".pdf"] - href kết thúc bằng .pdf */
+    a[href$=".pdf"] {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>1. img[alt] — Có thuộc tính alt</h2>
+  <img src="../Chapter1-8:HTML/image/bull-snake-morph-normal.jpeg" alt="Sample image">
+  <img src="../Chapter1-8:HTML/image/bull-snake-morph-normal.jpeg">
+
+  <h2>2. p[class="dog"] — Class chính xác là 'dog'</h2>
+  <p class="dog">This is a cute dog.</p>
+  <p class="cute big">This is not cute selected.</p>
+
+  <h2>3. div[class~="cute"] — Class chứa từ 'cute'</h2>
+  <div class="cute small">I am cute</div>
+  <div class="smallcute">I am NOT matched</div>
+
+  <h2>4. a[href^="https"] — Link bắt đầu bằng https</h2>
+  <a href="https://openai.com">OpenAI</a><br>
+  <a href="http://example.com">Not HTTPS</a>
+
+  <h2>5. a[href*="tube"] — Link có chứa chữ 'tube'</h2>
+  <a href="https://youtube.com">YouTube</a><br>
+  <a href="https://vimeo.com">Vimeo</a>
+
+  <h2>6. a[href$=".pdf"] — Link kết thúc bằng .pdf</h2>
+  <a href="#file-manual.pdf">User Manual</a><br>
+  <a href="#doc.html">Not a PDF</a>
+
+</body>
+</html>
