@@ -1,0 +1,59 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <title>CSS Attribute Selectors Demo</title>
+  <style>img[alt] {
+  border: 2px dashed green;
+}
+
+p[class="dog"] {
+  color: red;
+  font-weight: bold;
+}
+
+div[class~="cute"] {
+  background-color: pink;
+}
+
+a[href^="https"] {
+  color: green;
+}
+
+a[href*="tube"] {
+  color: bisque;
+  text-decoration: underline;
+}
+
+a[href$=".pdf"] {
+  background-color: #ff0;
+}
+</style>
+</head>
+<body>
+
+  <h2>1. img[alt] — Có thuộc tính alt</h2>
+  <img src="/bull-snake-morph-normal.4a9c05ea.jpeg" alt="Sample image">
+  <img src="/bull-snake-morph-normal.4a9c05ea.jpeg">
+
+  <h2>2. p[class="dog"] — Class chính xác là 'dog'</h2>
+  <p class="dog">This is a cute dog.</p>
+  <p class="cute big">This is not cute selected.</p>
+
+  <h2>3. div[class~="cute"] — Class chứa từ 'cute'</h2>
+  <div class="cute small">I am cute</div>
+  <div class="smallcute">I am NOT matched</div>
+
+  <h2>4. a[href^="https"] — Link bắt đầu bằng https</h2>
+  <a href="https://openai.com">OpenAI</a><br>
+  <a href="http://example.com">Not HTTPS</a>
+
+  <h2>5. a[href*="tube"] — Link có chứa chữ 'tube'</h2>
+  <a href="https://youtube.com">YouTube</a><br>
+  <a href="https://vimeo.com">Vimeo</a>
+
+  <h2>6. a[href$=".pdf"] — Link kết thúc bằng .pdf</h2>
+  <a href="#file-manual.pdf">User Manual</a><br>
+  <a href="#doc.html">Not a PDF</a>
+
+
+
+<script src="/attribute-selectors.9422308b.js"></script></body></html>
