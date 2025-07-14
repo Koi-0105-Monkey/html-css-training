@@ -1,55 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>display: none vs position: absolute</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 Layout - Yoko's Kitchen</title>
   <style>
-    .container {
-      position: relative;
-      width: 300px;
-      height: 200px;
-      background-color: #eee;
-      border: 2px solid black;
-      margin-bottom: 40px;
+    * {
+      box-sizing: border-box;
     }
-
-    .box {
+    body {
+      color: #e5e1e1;
+      line-height: 1.4em;
+      margin: 0;
+      font-family: Georgia, Times, serif;
+    }
+    .wrapper {
+      width: 940px;
+      margin: 0 auto;
+    }
+    header, section, footer, aside, nav, article, figure, figcaption {
+      background-color: #fff;
+      background-image: url("./image/dark-wood.jpeg");
+      background-position: center;
+      border: 2px solid #000;
+      margin: 20px auto;
+    }
+    header {
+      height: 160px;
+      background-image: url("./image/header.png");
+    }
+    h1 {
+      text-indent: -9999px;
+      width: 940px;
+      height: 130px;
+      margin: 0;
+    }
+    nav, footer {
+      clear: both;
+      color: #fff;
+      background-color: #aeaca8;
+      height: 30px;
+      padding: 5px 0;
+    }
+    nav ul {
+      margin: 0;
+      padding: 0 0 0 30px;
+    }
+    nav li {
+      display: inline;
+      margin-right: 40px;
+    }
+    nav li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    nav li a:hover, nav li a.current {
+      color: #ee1313;
+    }
+    section.courses {
+      float: left;
+      width: 659px;
+      border-right: 1px solid #eee;
+    }
+    article {
+      clear: both;
+      overflow: auto;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    hgroup {
+      margin-top: 40px;
+    }
+    figure {
+      float: left;
+      width: 290px;
+      height: 220px;
+      padding: 5px;
+      margin: 20px;
+      border: 1px solid #eee;
+    }
+    figcaption {
+      font-size: 90%;
+      text-align: left;
+    }
+    aside {
+      width: 230px;
+      float: left;
+      padding-left: 20px;
+    }
+    aside section a {
+      display: block;
       padding: 10px;
-      color: white;
-      font-weight: bold;
+      border-bottom: 1px solid #eee;
+      color: #de6581;
+      text-decoration: none;
     }
-
-    .none-box {
-      background-color: red;
-      display: none; /* biến mất khỏi layout */
+    aside section a:hover {
+      color: #985d6a;
+      background-color: #efefef;
     }
-
-    .absolute-box {
-      background-color: blue;
-      position: absolute;
-      top: 30px;
-      left: 30px;
-      z-index: 10;
+    h1, h2, h3 {
+      font-weight: normal;
     }
-
-    .normal-box {
-      background-color: green;
+    h2, h3 {
+      margin: 0;
+      padding: 0;
+    }
+    h3 {
+      color: #de6581;
+    }
+    aside h2 {
+      color: #de6581;
+    }
+    footer {
+      font-size: 80%;
+      text-align: center;
+      padding: 10px 0;
     }
   </style>
 </head>
 <body>
+  <div class="wrapper">
+    <header>
+      <h1>Yoko's Kitchen</h1>
+      <nav>
+        <ul>
+          <li><a href="#" class="current">home</a></li>
+          <li><a href="#">classes</a></li>
+          <li><a href="#">catering</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <h2>1. Box đỏ: display: none (biến mất)</h2>
-  <div class="container">
-    <div class="box none-box">Display: none</div>
-    <div class="box normal-box">Box bình thường</div>
+    <section class="courses">
+      <article>
+        <figure>
+          <img src="./image/bok-choi.jpeg" alt="Bok Choi" width="280" height="210">
+          <figcaption>Bok Choi</figcaption>
+        </figure>
+        <hgroup>
+          <h2>Japanese Vegetarian</h2>
+          <h3>Five week course in London</h3>
+        </hgroup>
+        <p>A five week introduction to traditional Japanese vegetarian meals, teaching you a selection of rice and noodle dishes.</p>
+      </article>
+
+      <article>
+        <figure>
+          <img src="./image/Teriyaki.jpeg" alt="Teriyaki Sauce" width="280" height="210">
+          <figcaption>Teriyaki Sauce</figcaption>
+        </figure>
+        <hgroup>
+          <h2>Sauces Masterclass</h2>
+          <h3>One day workshop</h3>
+        </hgroup>
+        <p>An intensive one-day course looking at how to create the most delicious sauces for use in a range of Japanese cookery.</p>
+      </article>
+    </section>
+
+    <aside>
+      <section class="popular-recipes">
+        <h2>Popular Recipes</h2>
+        <a href="#">Yakitori (grilled chicken)</a>
+        <a href="#">Tsukune (minced chicken patties)</a>
+        <a href="#">Okonomiyaki (savory pancakes)</a>
+        <a href="#">Mizutaki (chicken stew)</a>
+      </section>
+      <section class="contact-details">
+        <h2>Contact</h2>
+        <p>Yoko's Kitchen<br>
+        27 Redchurch Street<br>
+        Shoreditch<br>
+        London E2 7DP</p>
+      </section>
+    </aside>
+
+    <footer>
+      &copy; 2011 Yoko's Kitchen
+    </footer>
   </div>
-
-  <h2>2. Box xanh: position: absolute (lơ lửng, đè lên)</h2>
-  <div class="container">
-    <div class="box absolute-box">Position: absolute</div>
-    <div class="box normal-box">Box bình thường</div>
-  </div>
-
 </body>
 </html>
