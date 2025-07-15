@@ -1,0 +1,88 @@
+.service_container {
+    display: flex;
+    max-width: 1184px;
+    margin: 0 auto;
+    padding: 64px 16px;
+    gap: 64px;
+    align-items: center;
+}
+
+.service_badge {
+    font-size: 23px;
+    color: #F85E9F;
+}
+
+.service_content {
+    max-width: 350px;
+}
+
+.main_title {
+    font-size: 38px;
+    line-height: 40px;
+    color: #191825;
+    font-weight: 400;
+}
+
+.card_1 {
+    width: 350px;
+    height: 443px;
+    border-radius: 32px;
+    padding: 64px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #1918251A;
+    gap: 64px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card_1 img {
+    width: 64px;
+}
+
+.card1_container {
+    max-width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+
+}
+
+h1 {
+    font-weight: 400;
+}
+
+.sub_title {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #19182580;
+    text-align: center;
+    max-width: 220px;
+}
+
+.card_2 {
+  width: 350px;
+  height: 443px;
+  border-radius: 32px;
+  padding: 64px 32px;
+  background-color: #ffffff;
+  box-shadow: 0 30px 40px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #1918251A;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+}
+
+.card2_container {
+  max-width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  text-align: center;
+}
