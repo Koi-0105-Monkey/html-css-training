@@ -1,0 +1,153 @@
+.hero_container {
+  max-width: 1184px;
+  margin: 0 auto;
+  padding: 64px 16px;
+}
+
+.hero_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.left_frame {
+  max-width: 412px;
+  display: flex;
+  flex-direction: column;
+  gap: 43px;
+  padding: 64px 0;
+}
+
+.right_frame {
+  position: relative;
+  flex: 1;
+  min-width: 340px;
+}
+
+.right_frame img {
+  max-width: 105%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+.maintitle {
+  font-size: 64px;
+  line-height: 90px;
+}
+
+.maintitle p {
+  color: #F85E9F;
+  display: inline;
+}
+
+.hero_badge {
+  background-color: #FFFFFF;
+  color: #F85E9F;
+  max-width: fit-content;
+  padding: 7px 32px;
+  border-radius: 100px;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0 10px 30px #00000012;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #19182580;
+}
+
+.cta_btn {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.get_started {
+  background-color: #5D50C6;
+  color: #EEEEEE;
+  padding: 5px 32px;
+  border-radius: 100px;
+  text-decoration: none;
+}
+
+.watch_demo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #222831;
+  text-decoration: none;
+  padding: 5px 30px;
+  border-radius: 100px;
+  border: 1px solid #EEEEEE;
+}
+
+.hero_bg {
+  position: absolute;
+  z-index: 0;
+}
+
+.photo_1,
+.photo_2,
+.photo_3 {
+  position: absolute;
+  max-width: 272px;
+  height: auto;
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  z-index: 2;
+}
+
+.photo_1 {
+  top: 139px;
+  left: 91px;
+  transform: translate(0, 0);
+}
+
+.photo_2 {
+  top: 139px;
+  left: 91px;
+  transform: translate(0, 332px);
+}
+
+.photo_3 {
+  top: 139px;
+  left: 91px;
+  transform: translate(304px, 110px);
+}
+
+.send_icon {
+  position: absolute;
+  top: 75px;
+  left: 0px;
+  transform: translate(30px, 332px);
+  z-index: 6;
+}
+
+.tplace {
+  position: absolute;
+  top: 270px;
+  left: 0px;
+  transform: translate(640px, 332px);
+  z-index: 6;
+  color: #222831;
+  padding: 5px 30px;
+  border-radius: 100px;
+  border: 1px solid #EEEEEE;
+  background-color: #FFFFFF;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0 10px 30px #00000012;
+}
+
+.add_friend {
+  position: absolute;
+  top: 390px;
+  left: 0px;
+  transform: translate(470px, 332px);
+  z-index: 6;
+}
+
