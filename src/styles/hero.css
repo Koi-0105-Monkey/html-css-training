@@ -1,10 +1,10 @@
-.hero_container {
+.hero__container {
   max-width: 1184px;
   margin: 0 auto;
   padding: 64px 16px;
 }
 
-.hero_content {
+.hero__content {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -12,7 +12,7 @@
   gap: 40px;
 }
 
-.left_frame {
+.hero__left-frame {
   max-width: 412px;
   display: flex;
   flex-direction: column;
@@ -20,30 +20,36 @@
   padding: 64px 0;
 }
 
-.right_frame {
+.hero__right-frame {
   position: relative;
   flex: 1;
   min-width: 340px;
 }
 
-.right_frame img {
+.hero__right-frame img {
   max-width: 105%;
   height: auto;
   display: block;
   position: relative;
 }
 
-.maintitle {
+.hero__title {
   font-size: 64px;
-  line-height: 90px;
+  line-height: 120%;
 }
 
-.maintitle p {
+.hero__title p {
   color: #F85E9F;
   display: inline;
 }
 
-.hero_badge {
+.hero__subtitle {
+  font-size: 18px;
+  color: #19182580;
+}
+
+.hero__badge,
+.hero__top-place {
   background-color: #FFFFFF;
   color: #F85E9F;
   max-width: fit-content;
@@ -54,18 +60,23 @@
   box-shadow: 0 10px 30px #00000012;
 }
 
-.subtitle {
-  font-size: 18px;
-  color: #19182580;
+.hero__top-place {
+  color: #222831;
+  position: absolute;
+  top: 270px;
+  left: 0px;
+  transform: translate(640px, 332px);
+  border: 1px solid #EEEEEE;
+  z-index: 6;
 }
 
-.cta_btn {
+.hero__cta {
   display: flex;
   gap: 24px;
   align-items: center;
 }
 
-.get_started {
+.hero__button--primary {
   background-color: #5D50C6;
   color: #EEEEEE;
   padding: 5px 32px;
@@ -73,7 +84,7 @@
   text-decoration: none;
 }
 
-.watch_demo {
+.hero__button--secondary {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -84,14 +95,14 @@
   border: 1px solid #EEEEEE;
 }
 
-.hero_bg {
+.hero__background {
   position: absolute;
   z-index: 0;
 }
 
-.photo_1,
-.photo_2,
-.photo_3 {
+.hero__photo--santorini,
+.hero__photo--mountain,
+.hero__photo--city {
   position: absolute;
   max-width: 272px;
   height: auto;
@@ -99,55 +110,36 @@
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
   z-index: 2;
-}
-
-.photo_1 {
   top: 139px;
   left: 91px;
+}
+
+.hero__photo--santorini {
   transform: translate(0, 0);
 }
 
-.photo_2 {
-  top: 139px;
-  left: 91px;
+.hero__photo--mountain {
   transform: translate(0, 332px);
 }
 
-.photo_3 {
-  top: 139px;
-  left: 91px;
+.hero__photo--city {
   transform: translate(304px, 110px);
 }
 
-.send_icon {
+.hero__icon--send,
+.hero__icon--add-friend {
   position: absolute;
+  z-index: 6;
+}
+
+.hero__icon--send {
   top: 75px;
   left: 0px;
   transform: translate(30px, 332px);
-  z-index: 6;
 }
 
-.tplace {
-  position: absolute;
-  top: 270px;
-  left: 0px;
-  transform: translate(640px, 332px);
-  z-index: 6;
-  color: #222831;
-  padding: 5px 30px;
-  border-radius: 100px;
-  border: 1px solid #EEEEEE;
-  background-color: #FFFFFF;
-  display: inline-flex;
-  align-items: center;
-  box-shadow: 0 10px 30px #00000012;
-}
-
-.add_friend {
-  position: absolute;
+.hero__icon--add-friend {
   top: 390px;
   left: 0px;
   transform: translate(470px, 332px);
-  z-index: 6;
 }
-
