@@ -11,7 +11,7 @@ fetch(new URL('../components/hero.html', import.meta.url))
     document.getElementById('hero-container').innerHTML = data;
   })
 
-  
+
 fetch(new URL('../components/partner.html', import.meta.url))
   .then(res => res.text())
   .then(data => {
@@ -19,15 +19,20 @@ fetch(new URL('../components/partner.html', import.meta.url))
   })
 
 
-  fetch(new URL('../components/service.html', import.meta.url))
+fetch(new URL('../components/service.html', import.meta.url))
   .then(res => res.text())
   .then(data => {
     document.getElementById('service-container').innerHTML = data;
   })
 
-    fetch(new URL('../components/destination.html', import.meta.url))
+fetch(new URL('../components/destination.html', import.meta.url))
   .then(res => res.text())
   .then(data => {
     document.getElementById('destination-container').innerHTML = data;
   })
 
+fetch(new URL('../components/travel-point.html', import.meta.url))
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('travel-container').innerHTML = data;
+  })

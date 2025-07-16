@@ -3,6 +3,7 @@
 @import './partner.css';
 @import './service.css';
 @import './destination.css';
+@import './travel-point.css';
 
 body {
   font-family: 'Adamina', serif;

@@ -1,0 +1,76 @@
+
+.travel-point__container {
+    display: flex;
+    max-width: 1312px;
+    margin: 0 auto;
+    padding: 65px 0;
+    color: #191825;
+}
+
+.travel-point__image-wrapper {
+    max-width: 871px;
+}
+
+.travel-point__content-wrapper {
+    font-weight: 400;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.travel-point__label {
+    color: #F85E9F;
+    font-size: 23px;
+    letter-spacing: 20%;
+    display: flex;
+    gap: 10px;
+}
+
+.travel-point__title {
+    color: #191825;
+    font-size: 48px;
+    line-height: 120%;
+    padding: 20px 0;
+}
+
+.travel-point__subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: #191825BF;
+    line-height: 160%;
+    padding: 20px 0;
+}
+
+.travel-point__stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.travel-point__stat {
+    width: 205px;
+    height: 151px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #1918251A;
+    background-color: #FFFFFF;
+    border-radius: 32px;
+    margin-bottom: 10px;
+}
+
+.travel-point__value {
+    color: #FF5722;
+    font-size: 35px;
+    line-height: 120%;
+    margin-bottom: 18px;
+}
+
+.travel-point__stat-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 160%;
+}
