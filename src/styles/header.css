@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1184px;
-  height: 113px;
+  max-width: 1184px;  
+
   padding: 32px 0;
   margin: 0 auto;
 }
@@ -19,7 +19,7 @@
 }
 
 .header__logo span {
-  font-size: 24px;
+  font-size: 25px;
   font-family: 'ABeeZee', sans-serif;
   color: #191825;
   font-style: italic;
@@ -27,13 +27,13 @@
 
 .header__nav {
   display: flex;
-  gap: 24px;
+  gap: 47px;
 }
 
 .header__nav a {
   text-decoration: none;
   color: #19182580;
-  font-size: 17px;
+  font-size: 14px;
 }
 
 .header__nav a.home{
@@ -54,7 +54,7 @@
 .header__auth .signup {
   background-color: #5D50C6;
   color: #EEEEEE;
-  padding: 7px 32px;
+  padding: 5px 32px;
   border-radius: 100px;
   text-decoration: none;
   display:inline-flex;

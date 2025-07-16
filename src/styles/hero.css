@@ -1,0 +1,145 @@
+.hero__container {
+  max-width: 1184px;
+  margin: 0 auto;
+  padding: 64px 16px;
+}
+
+.hero__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.hero__left-frame {
+  max-width: 412px;
+  display: flex;
+  flex-direction: column;
+  gap: 43px;
+  padding: 64px 0;
+}
+
+.hero__right-frame {
+  position: relative;
+  flex: 1;
+  min-width: 340px;
+}
+
+.hero__right-frame img {
+  max-width: 105%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+.hero__title {
+  font-size: 64px;
+  line-height: 120%;
+}
+
+.hero__title p {
+  color: #F85E9F;
+  display: inline;
+}
+
+.hero__subtitle {
+  font-size: 18px;
+  color: #19182580;
+}
+
+.hero__badge,
+.hero__top-place {
+  background-color: #FFFFFF;
+  color: #F85E9F;
+  max-width: fit-content;
+  padding: 7px 32px;
+  border-radius: 100px;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0 10px 30px #00000012;
+}
+
+.hero__top-place {
+  color: #222831;
+  position: absolute;
+  top: 270px;
+  left: 0px;
+  transform: translate(640px, 332px);
+  border: 1px solid #EEEEEE;
+  z-index: 6;
+}
+
+.hero__cta {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.hero__button--primary {
+  background-color: #5D50C6;
+  color: #EEEEEE;
+  padding: 5px 32px;
+  border-radius: 100px;
+  text-decoration: none;
+}
+
+.hero__button--secondary {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #222831;
+  text-decoration: none;
+  padding: 5px 30px;
+  border-radius: 100px;
+  border: 1px solid #EEEEEE;
+}
+
+.hero__background {
+  position: absolute;
+  z-index: 0;
+}
+
+.hero__photo--santorini,
+.hero__photo--mountain,
+.hero__photo--city {
+  position: absolute;
+  max-width: 272px;
+  height: auto;
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  z-index: 2;
+  top: 139px;
+  left: 91px;
+}
+
+.hero__photo--santorini {
+  transform: translate(0, 0);
+}
+
+.hero__photo--mountain {
+  transform: translate(0, 332px);
+}
+
+.hero__photo--city {
+  transform: translate(304px, 110px);
+}
+
+.hero__icon--send,
+.hero__icon--add-friend {
+  position: absolute;
+  z-index: 6;
+}
+
+.hero__icon--send {
+  top: 75px;
+  left: 0px;
+  transform: translate(30px, 332px);
+}
+
+.hero__icon--add-friend {
+  top: 390px;
+  left: 0px;
+  transform: translate(470px, 332px);
+}
