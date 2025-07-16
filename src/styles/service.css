@@ -1,0 +1,71 @@
+.service {
+  display: flex;
+  max-width: 1184px;
+  margin: 0 auto;
+  padding: 64px 16px;
+  gap: 64px;
+  align-items: center;
+}
+
+.service__content {
+  max-width: 350px;
+}
+
+.service__badge {
+  font-size: 23px;
+  color: #F85E9F;
+}
+
+.service__title {
+  font-size: 38px;
+  line-height: 40px;
+  color: #191825;
+  font-weight: 400;
+}
+
+.service__card {
+  width: 350px;
+  height: 443px;
+  border-radius: 32px;
+  background-color: #ffffff;
+  border: 1px solid #1918251A;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+}
+
+.service__card--guide {
+  padding: 64px;
+}
+
+.service__card--booking {
+  padding: 64px 32px;
+  box-shadow: 0 30px 40px rgba(0, 0, 0, 0.05);
+}
+
+.service__icon {
+  width: 64px;
+}
+
+.service__card-body {
+  max-width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  text-align: center;
+}
+
+.service__card-heading {
+  font-weight: 400;
+}
+
+.service__card-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #19182580;
+  max-width: 220px;
+}

@@ -1,6 +1,7 @@
 @import './header.css';
 @import './hero.css';
 @import './partner.css';
+@import './service.css';
 
 body {
   font-family: 'Adamina', serif;
