@@ -17,10 +17,17 @@ fetch(new URL('../components/partner.html', import.meta.url))
   .then(data => {
     document.getElementById('partner-container').innerHTML = data;
   })
-  
+
 
   fetch(new URL('../components/service.html', import.meta.url))
   .then(res => res.text())
   .then(data => {
     document.getElementById('service-container').innerHTML = data;
   })
+
+    fetch(new URL('../components/destination.html', import.meta.url))
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('destination-container').innerHTML = data;
+  })
+

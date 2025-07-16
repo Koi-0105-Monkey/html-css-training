@@ -24,8 +24,7 @@
 }
 
 .service__card {
-  width: 350px;
-  height: 443px;
+  max-width: 350px;
   border-radius: 32px;
   background-color: #ffffff;
   border: 1px solid #1918251A;
@@ -41,7 +40,7 @@
 }
 
 .service__card--booking {
-  padding: 64px 32px;
+  padding: 64px;
   box-shadow: 0 30px 40px rgba(0, 0, 0, 0.05);
 }
 
@@ -53,7 +52,7 @@
   max-width: 220px;
   display: flex;
   flex-direction: column;
-  gap: 64px;
+  gap: 30px;
   text-align: center;
 }
 
