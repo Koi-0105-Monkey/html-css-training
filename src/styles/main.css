@@ -3,12 +3,58 @@
 @import './partner.css';
 @import './service.css';
 @import './destination.css';
+@import './travel-point.css';
+
+:root {
+  --max-width-container: 1184px;
+  --padding-section: 64px;
+  --padding-inline: 16px;
+
+  --color-background: #ffffff;
+  --color-surface: #f9f9f9;
+  --color-text-primary: #191825BF;
+  --color-text-secondary: #19182580;
+  --color-heading: #191825;
+  --color-accent: #F85E9F;
+  --color-highlight: #FF5722;
+  --color-border: #1918251A;
+  --color-light-border: #EEEEEE;
+  --color-button: #5D50C6;
+  --font-heading: 'Adamina', serif;
+  --font-body: 'Inter', sans-serif;
+  --font-sub: 'ABeeZee', sans-serif;
+
+  --font-size-base: 13px;
+  --font-size-small: 14px;
+  --font-size-medium: 18px;
+  --font-size-large: 23px;
+  --font-size-xslarge: 35px;
+  --font-size-xlarge: 38px;
+  --font-size-xxlarge: 43px;
+  --font-size-xxxlarge: 48px;
+  --font-size-hero: 64px;
+  --font-size-logo: 25px;
+
+  --font-weight-body: 400;
+  --font-weight-heading: 700;
+  --line-height-base: 40px;
+  --line-height-tight: 120%;
+  --line-height-relaxed: 160%;
+  --letter-spacing-small: 5px;
+
+  --radius-full: 100px;
+  --radius-xl: 32px;
+  --shadow-sm: 0 10px 30px #00000012;
+  --shadow-md: 0 30px 40px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 8px 20px rgba(0, 0, 0, 0.12);
+  --shadow-right: 0px 288px 173px 0px #00000012;
+}
 
 body {
-  font-family: 'Adamina', serif;
-  background-color: #fff;
-  color: #222831;
-  line-height: 40px;
-  font-weight: 400;
-  font-size: 13px;
+  font-family: var(--font-heading);
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  line-height: var(--line-height-base);
+  font-weight: var(--font-weight-body);
+  font-size: var(--font-size-base);
 }

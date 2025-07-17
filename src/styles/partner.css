@@ -1,7 +1,7 @@
 .partner__container {
-    max-width: 1184px;
-    padding: 64px 0;
+    max-width: var(--max-width-container);
+    margin: 0 auto;
+    padding: var(--padding-section) var(--padding-inline);
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
 }

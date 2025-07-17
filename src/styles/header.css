@@ -2,8 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1184px;  
-
+  max-width: 1184px;
   padding: 32px 0;
   margin: 0 auto;
 }
@@ -19,9 +18,9 @@
 }
 
 .header__logo span {
-  font-size: 25px;
-  font-family: 'ABeeZee', sans-serif;
-  color: #191825;
+  font-size: var(--font-size-logo);
+  font-family: var(--font-sub);
+  color: var(--color-heading);
   font-style: italic;
 }
 
@@ -32,12 +31,13 @@
 
 .header__nav a {
   text-decoration: none;
-  color: #19182580;
-  font-size: 14px;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-small);
+  font-family: var(--font-body);
 }
 
-.header__nav a.home{
-  color: #1e1e1e;
+.header__nav a.home {
+  color: var(--color-text-primary);
 }
 
 .header__auth {
@@ -47,16 +47,18 @@
 }
 
 .header__auth .login {
-  color: #222831;
+  color: var(--color-text-primary);
   text-decoration: none;
+  font-family: var(--font-body);
 }
 
 .header__auth .signup {
-  background-color: #5D50C6;
-  color: #EEEEEE;
+  background-color: var(--color-button);
+  color: var(--color-light-border);
   padding: 5px 32px;
-  border-radius: 100px;
+  border-radius: var(--radius-full);
   text-decoration: none;
-  display:inline-flex;
+  display: inline-flex;
   align-items: center;
+  font-family: var(--font-body);
 }
