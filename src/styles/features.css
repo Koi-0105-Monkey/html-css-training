@@ -1,0 +1,73 @@
+.feature__container {
+    display: flex;
+    max-width: 1312px;
+    margin: 0 auto;
+    padding: var(--padding-section) 0;
+    gap: 70px;
+}
+
+.feature__left-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 601px;
+    flex-direction: column;
+    gap: 64px;
+    margin-right: 32px;
+}
+
+.feature__right-wrapper {
+    max-width: 691px;
+}
+
+.feature__label {
+    text-transform: uppercase;
+    color: var(--color-accent);
+    font-size: var(--font-size-large);
+    letter-spacing: var(--letter-spacing-small);
+    line-height: var(--line-height-tight);
+    font-weight: var(--font-weight-body);
+}
+
+.feature__title {
+    color: var(--color-header);
+    font-size: var(--font-size-xxxlarge);
+    font-weight: var(--font-weight-body);
+}
+
+.feature__description {
+    font-weight: var(--font-weight-body);
+    font-family: var(--font-body);
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-relaxed);
+    font-size: var(--font-size-medium);
+}
+
+.feature__cards,
+.feature__card {
+    display: flex;
+}
+
+.feature__cards{
+    flex-direction: column;
+}
+
+.feature__card {
+    gap: 32px;
+    border-radius: var(--radius-xl);
+    padding: 32px;
+}
+
+.feature__icon {
+    max-width: 100px;
+}
+
+.feature__card-title {
+    color: var(--color-header);
+    font-size: var(--font-size-large);
+    line-height: var(--line-height-tight);
+    font-weight: var(--font-weight-body);
+}
+
+.feature__card--schedule-icon {
+    border: 1px solid var(--color-border);
+}
