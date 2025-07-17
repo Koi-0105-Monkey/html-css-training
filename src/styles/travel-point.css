@@ -3,8 +3,8 @@
     display: flex;
     max-width: 1312px;
     margin: 0 auto;
-    padding: 65px 0;
-    color: #191825;
+  padding: var(--padding-section) var(--padding-inline);
+    color: var(--color-heading);
 }
 
 .travel-point__image-wrapper {
@@ -12,32 +12,32 @@
 }
 
 .travel-point__content-wrapper {
-    font-weight: 400;
+    font-weight: var(--font-weight-body);
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
 }
 
 .travel-point__label {
-    color: #F85E9F;
-    font-size: 23px;
-    letter-spacing: 20%;
+    color: var(--color-accent);
+    font-size: var(--font-size-large);
+    letter-spacing: var(--letter-spacing-small);
     display: flex;
     gap: 10px;
 }
 
 .travel-point__title {
-    color: #191825;
-    font-size: 48px;
-    line-height: 120%;
+    color: var(--color-heading);
+    font-size: var(--font-size-xxxlarge);
+    line-height: var(--line-height-tight);
     padding: 20px 0;
 }
 
 .travel-point__subtitle {
-    font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    color: #191825BF;
-    line-height: 160%;
+    font-family: var(--font-body);
+    font-size: var(--font-size-medium);
+    color: var(--color-text-primary);
+    line-height: var(--line-height-relaxed);
     padding: 20px 0;
 }
 
@@ -56,21 +56,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid #1918251A;
-    background-color: #FFFFFF;
-    border-radius: 32px;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-background);
+    border-radius: var(--radius-xl);
     margin-bottom: 10px;
 }
 
 .travel-point__value {
-    color: #FF5722;
-    font-size: 35px;
-    line-height: 120%;
+    color: var(--color-highlight);
+    font-size: var(--font-size-xslarge);
+    line-height: var(--line-height-tight);
     margin-bottom: 18px;
 }
 
 .travel-point__stat-label {
-    font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    line-height: 160%;
+    font-family: var(--font-body);
+    font-size: var(--font-size-medium);
+    line-height: var(--line-height-relaxed);
 }

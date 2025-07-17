@@ -1,7 +1,7 @@
 .hero__container {
-  max-width: 1184px;
+  max-width: var(--max-width-container);
   margin: 0 auto;
-  padding: 64px 16px;
+  padding: var(--padding-section) var(--padding-inline);
 }
 
 .hero__content {
@@ -9,14 +9,14 @@
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 35px;
 }
 
 .hero__left-frame {
   max-width: 412px;
   display: flex;
   flex-direction: column;
-  gap: 43px;
+  gap: 40px;
   padding: 64px 0;
 }
 
@@ -34,39 +34,41 @@
 }
 
 .hero__title {
-  font-size: 64px;
-  line-height: 120%;
+  font-size: var(--font-size-hero);
+  line-height: var(--line-height-tight);
+  font-weight: var(--font-weight-body);
 }
 
 .hero__title p {
-  color: #F85E9F;
+  color: var(--color-accent);
   display: inline;
 }
 
 .hero__subtitle {
-  font-size: 18px;
-  color: #19182580;
+  font-size: var(--font-size-medium);
+  color: var(--color-text-secondary);
 }
 
 .hero__badge,
 .hero__top-place {
-  background-color: #FFFFFF;
-  color: #F85E9F;
+  background-color: var(--color-background);
+  color: var(--color-accent);
   max-width: fit-content;
   padding: 7px 32px;
-  border-radius: 100px;
+  border-radius: var(--radius-full);
   display: inline-flex;
   align-items: center;
-  box-shadow: 0 10px 30px #00000012;
+  box-shadow: var(--shadow-sm);
+  gap: 10px;
 }
 
 .hero__top-place {
-  color: #222831;
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-light-border);
   position: absolute;
   top: 270px;
   left: 0px;
   transform: translate(640px, 332px);
-  border: 1px solid #EEEEEE;
   z-index: 6;
 }
 
@@ -77,10 +79,10 @@
 }
 
 .hero__button--primary {
-  background-color: #5D50C6;
-  color: #EEEEEE;
-  padding: 5px 32px;
-  border-radius: 100px;
+  background-color: var(--color-button);
+  color: var(--color-light-border);
+  padding: 5px 30px;
+  border-radius: var(--radius-full);
   text-decoration: none;
 }
 
@@ -88,16 +90,12 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  color: #222831;
+  color: var(--color-text-primary);
   text-decoration: none;
   padding: 5px 30px;
-  border-radius: 100px;
-  border: 1px solid #EEEEEE;
-}
-
-.hero__background {
-  position: absolute;
-  z-index: 0;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-light-border);
+  background-color: transparent;
 }
 
 .hero__photo--santorini,
@@ -106,9 +104,9 @@
   position: absolute;
   max-width: 272px;
   height: auto;
-  border-radius: 32px;
+  border-radius: var(--radius-xl);
   overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  box-shadow: var(--shadow-lg);
   z-index: 2;
   top: 139px;
   left: 91px;
