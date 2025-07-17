@@ -2,6 +2,7 @@
 @import './hero.css';
 @import './partner.css';
 @import './service.css';
+@import './destination.css';
 
 body {
   font-family: 'Adamina', serif;
