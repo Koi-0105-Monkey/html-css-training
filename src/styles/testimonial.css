@@ -1,0 +1,105 @@
+.testimonial {
+    overflow: hidden;
+}
+
+.testimonial__background {
+    position: absolute;
+    top: 4600px;
+    left: 50%;
+    width: 1920px;
+    height: 130%;
+    background-image: url('../assets/images/testimonial-background.svg');
+    background-size: cover;
+    background-position: center;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.testimonial__container {
+    max-width: var(--max-width-container);
+    margin: 0 auto;
+    padding: var(--padding-section) var(--padding-inline);
+    display: flex;
+    gap: 64px;
+}
+
+.testimonial__inner {
+    display: flex;
+    flex-direction: column;
+    margin: 0 62px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.testimonial__label,
+.testimonial__title,
+.testimonial__name,
+.testimonial__role,
+.testimonial__text {
+    font-weight: var(--font-weight-body);
+    line-height: var(--line-height-tight);
+}
+
+.testimonial__name,
+.testimonial__role,
+.testimonial__label {
+    font-size: var(--font-size-large);
+}
+
+.testimonial__label {
+    text-transform: uppercase;
+    color: var(--color-accent);
+    letter-spacing: var(--letter-spacing-small);
+}
+
+.testimonial__title {
+    font-size: var(--font-size-xxxlarge);
+    color: var(--color-heading);
+}
+
+.testimonial__avatar {
+    width: 128px;
+    margin: 32px;
+}
+
+.testimonial__name {
+    color: var(--color-highlight);
+}
+
+.testimonial__role,
+.testimonial__text {
+    color: var(--color-text-primary);
+}
+
+.testimonial__rating {
+    margin: 30px;
+}
+
+.testimonial__text {
+    font-size: var(--font-size-medium);
+    line-height: var(--line-height-relaxed);
+    text-align: center;
+}
+
+.testimonial__pagination {
+  display: flex;
+  gap: 22px;
+  margin-top: 32px;
+}
+
+.testimonial__dot {
+  width: 24px;
+  height: 24px;
+  background-color: var(--color-border);
+  border-radius: var(--radius-full);
+}
+
+.testimonial__dot--active {
+  background-color: var(--color-accent);
+}
+
+.testimonial__controls {
+    display: flex;
+    align-items: center;
+}
