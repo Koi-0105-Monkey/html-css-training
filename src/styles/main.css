@@ -5,6 +5,7 @@
 @import './destination.css';
 @import './travel-point.css';
 @import './features.css';
+@import './testimonial.css';
 
 :root {
   --max-width-container: 1184px;
@@ -58,4 +59,24 @@ body {
   line-height: var(--line-height-base);
   font-weight: var(--font-weight-body);
   font-size: var(--font-size-base);
+}
+
+.slider__logo {
+  max-width: 40px;
+}
+
+.slider__btn {
+  width: 100px;
+  height: 100px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider__btn--next {
+  background-color: var(--color-button);
+  box-shadow: var(--shadow-sm);
 }
