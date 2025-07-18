@@ -50,8 +50,14 @@ fetch(new URL('../components/testimonial.html', import.meta.url))
   })
 
 
-fetch(new URL('../components/subcribe.html', import.meta.url))
+fetch(new URL('../components/subscribe.html', import.meta.url))
   .then(res => res.text())
   .then(data => {
-    document.getElementById('subcribe-container').innerHTML = data;
+    document.getElementById('subscribe-container').innerHTML = data;
+  })
+
+fetch(new URL('../components/footer.html', import.meta.url))
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('footer-container').innerHTML = data;
   })

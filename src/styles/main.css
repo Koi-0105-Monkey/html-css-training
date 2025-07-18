@@ -6,12 +6,14 @@
 @import './travel-point.css';
 @import './features.css';
 @import './testimonial.css';
-@import './subcribe.css';
+@import './subscribe.css';
+@import './footer.css';
 
 :root {
   --max-width-container: 1184px;
   --padding-section: 64px;
   --padding-inline: 16px;
+  --padding-button: 30px 60px;
 
   --color-background: #ffffff;
   --color-surface: #f9f9f9;
@@ -104,4 +106,10 @@ body {
   color: var(--color-text-secondary);
   line-height: var(--line-height-relaxed);
   font-size: var(--font-size-medium);
+}
+.logo__brand {
+  font-size: var(--font-size-logo);
+  font-family: var(--font-sub);
+  color: var(--color-heading);
+  font-style: italic;
 }
