@@ -4,6 +4,7 @@
 @import './service.css';
 @import './destination.css';
 @import './travel-point.css';
+@import './features.css';
 
 :root {
   --max-width-container: 1184px;

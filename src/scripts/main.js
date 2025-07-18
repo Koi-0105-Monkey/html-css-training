@@ -36,3 +36,10 @@ fetch(new URL('../components/travel-point.html', import.meta.url))
   .then(data => {
     document.getElementById('travel-container').innerHTML = data;
   })
+
+  fetch(new URL('../components/features.html', import.meta.url))
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('features-container').innerHTML = data;
+  })
+
