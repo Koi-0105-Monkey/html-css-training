@@ -13,13 +13,6 @@
 }
 
 
-.header__logo {
-  font-size: var(--font-size-logo);
-  font-family: var(--font-sub);
-  color: var(--color-heading);
-  font-style: italic;
-}
-
 .header__nav {
   display: flex;
   gap: 47px;
@@ -32,8 +25,8 @@
   font-family: var(--font-body);
 }
 
-.header__nav-link--home {
-  color: var(--color-text-primary);
+.header__link-home {
+  color: var(--color-heading);
 }
 
 .header__auth {
