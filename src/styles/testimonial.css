@@ -83,20 +83,20 @@
 }
 
 .testimonial__pagination {
-  display: flex;
-  gap: 22px;
-  margin-top: 32px;
+    display: flex;
+    gap: 22px;
+    margin-top: 32px;
 }
 
 .testimonial__dot {
-  width: 24px;
-  height: 24px;
-  background-color: var(--color-border);
-  border-radius: var(--radius-full);
+    width: 24px;
+    height: 24px;
+    background-color: var(--color-border);
+    border-radius: var(--radius-full);
 }
 
 .testimonial__dot--active {
-  background-color: var(--color-accent);
+    background-color: var(--color-accent);
 }
 
 .testimonial__controls {
