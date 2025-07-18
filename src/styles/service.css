@@ -11,19 +11,6 @@
   max-width: 350px;
 }
 
-.service__badge {
-  font-size: var(--font-size-large);
-  color: var(--color-accent);
-  letter-spacing: var(--letter-spacing-small);
-}
-
-.service__title {
-  font-size: var(--font-size-xlarge);
-  line-height: var(--line-height-tight);
-  color: var(--color-heading);
-  font-weight: var(--font-weight-body);
-}
-
 .service__card {
   max-width: 350px;
   border-radius: var(--radius-xl);
@@ -59,13 +46,9 @@
 
 .service__card-heading {
   font-weight: var(--font-weight-body);
+  color: var(--color-heading);
 }
 
 .service__card-text {
-  font-family: var(--font-body);
-  font-weight: var(--font-weight-body);
-  font-size: var(--font-size-medium);
-  line-height: var(--line-height-relaxed);
-  color: var(--color-text-secondary);
   max-width: 220px;
 }

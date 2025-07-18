@@ -37,15 +37,21 @@ fetch(new URL('../components/travel-point.html', import.meta.url))
     document.getElementById('travel-container').innerHTML = data;
   })
 
-  fetch(new URL('../components/features.html', import.meta.url))
+fetch(new URL('../components/features.html', import.meta.url))
   .then(res => res.text())
   .then(data => {
     document.getElementById('features-container').innerHTML = data;
   })
 
-  fetch(new URL('../components/testimonial.html', import.meta.url))
+fetch(new URL('../components/testimonial.html', import.meta.url))
   .then(res => res.text())
   .then(data => {
     document.getElementById('testimonial-container').innerHTML = data;
   })
 
+
+fetch(new URL('../components/subcribe.html', import.meta.url))
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('subcribe-container').innerHTML = data;
+  })

@@ -13,7 +13,6 @@
   flex-direction: column;
 }
 
-.destination__label, 
 .destination__card-title,
 .destination__card-price,
 .destination__card-rate {
@@ -21,23 +20,12 @@
   font-weight: var(--font-weight-body);
 }
 
-.destination__label {
-  text-transform: uppercase;
-  color: var(--color-accent);
-  letter-spacing: var(--letter-spacing-small);
-}
 
 .destination__row {
   display: flex;
   justify-content: space-between;
 }
 
-.destination__title {
-  font-size: var(--font-size-xxlarge);
-  font-weight: var(--font-weight-body);
-  color: var(--color-heading);
-  line-height: var(--line-height-tight);
-}
 
 .destination__controls {
   display: flex;
@@ -65,13 +53,6 @@
 
 .destination__card-price {
     color: var(--color-accent);
-}
-
-.destination__card-place {
-    font-size: var(--font-size-medium);
-    font-weight: var(--font-weight-body);
-    color: var(--color-text-primary);
-    font-family: var(--font-body);
 }
 
 .destination__card-rate {
