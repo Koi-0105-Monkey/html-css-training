@@ -25,14 +25,14 @@
   gap: 47px;
 }
 
-.header__nav a {
+.header__nav-link {
   text-decoration: none;
   color: var(--color-text-secondary);
   font-size: var(--font-size-small);
   font-family: var(--font-body);
 }
 
-.header__nav a.home {
+.header__nav-link--home {
   color: var(--color-text-primary);
 }
 
