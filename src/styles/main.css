@@ -6,6 +6,7 @@
 @import './travel-point.css';
 @import './features.css';
 @import './testimonial.css';
+@import './subcribe.css';
 
 :root {
   --max-width-container: 1184px;
@@ -79,4 +80,28 @@ body {
 .slider__btn--next {
   background-color: var(--color-button);
   box-shadow: var(--shadow-sm);
+}
+
+.label {
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-size: var(--font-size-large);
+  letter-spacing: var(--letter-spacing-small);
+  display: flex;
+}
+
+.title {
+  color: var(--color-heading);
+  font-size: var(--font-size-xxxlarge);
+  line-height: var(--line-height-tight);
+  font-weight: var(--font-weight-body);
+  padding: 20px 0;
+}
+
+.description {
+  font-weight: var(--font-weight-body);
+  font-family: var(--font-body);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+  font-size: var(--font-size-medium);
 }

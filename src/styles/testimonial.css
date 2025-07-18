@@ -32,30 +32,15 @@
     flex-wrap: wrap;
 }
 
-.testimonial__label,
-.testimonial__title,
 .testimonial__name,
-.testimonial__role,
-.testimonial__text {
+.testimonial__role {
     font-weight: var(--font-weight-body);
     line-height: var(--line-height-tight);
 }
 
 .testimonial__name,
-.testimonial__role,
-.testimonial__label {
+.testimonial__role {
     font-size: var(--font-size-large);
-}
-
-.testimonial__label {
-    text-transform: uppercase;
-    color: var(--color-accent);
-    letter-spacing: var(--letter-spacing-small);
-}
-
-.testimonial__title {
-    font-size: var(--font-size-xxxlarge);
-    color: var(--color-heading);
 }
 
 .testimonial__avatar {
@@ -76,9 +61,7 @@
     margin: 30px;
 }
 
-.testimonial__text {
-    font-size: var(--font-size-medium);
-    line-height: var(--line-height-relaxed);
+.testimonial__description {
     text-align: center;
 }
 
