@@ -4,7 +4,7 @@
 
 .testimonial__background {
     position: absolute;
-    top: 4600px;
+    top: 4700px;
     left: 50%;
     width: 1920px;
     height: 130%;
@@ -21,12 +21,13 @@
     padding: var(--padding-section) var(--padding-inline);
     display: flex;
     gap: 64px;
+    justify-content: space-between;
 }
 
 .testimonial__inner {
     display: flex;
     flex-direction: column;
-    margin: 0 62px;
+    margin: 0 69px;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
