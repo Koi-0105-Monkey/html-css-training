@@ -38,11 +38,6 @@
   width: 100%;
 }
 
-.destination__card {
-    box-shadow: var(--shadow-sm);
-    box-shadow: var(--shadow-right);
-    border-radius: var(--radius-xl);
-}
 
 .destination__card-content {
     padding: 0 23px;

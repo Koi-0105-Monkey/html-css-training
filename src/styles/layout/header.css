@@ -1,4 +1,4 @@
-.header {
+.site-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,41 +7,43 @@
   margin: 0 auto;
 }
 
-.header__logo {
+.site-header__logo {
   display: flex;
   gap: 16px;
 }
 
 
-.header__nav {
+.site-header__nav {
   display: flex;
   gap: 47px;
 }
 
-.header__nav-link {
+.site-header__link {
   text-decoration: none;
   color: var(--color-text-secondary);
   font-size: var(--font-size-small);
   font-family: var(--font-body);
 }
 
-.header__link-home {
-  color: var(--color-heading);
+.site-header__link--home {
+  color: var(--color-heading); 
 }
 
-.header__auth {
+.site-header__auth {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-.header__auth .login {
+.site-header__auth .site-header__login {
   color: var(--color-text-primary);
   text-decoration: none;
   font-family: var(--font-body);
+  padding: 5px 30px;
+  border-radius: var(--radius-full);
 }
 
-.header__auth .signup {
+.site-header__auth .site-header__signup {
   background-color: var(--color-button);
   color: var(--color-light-border);
   padding: 5px 32px;

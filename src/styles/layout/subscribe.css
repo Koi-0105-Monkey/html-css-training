@@ -14,7 +14,7 @@
   padding: 0 80px;
 }
 
-.subscribe__email-form {
+.subscribe__form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,7 +25,7 @@
 }
 
 
-.subscribe__input-form {
+.subscribe__form-group {
   background-color: var(--color-background);
   border-radius: var(--radius-full);
   padding: 32px;
@@ -37,7 +37,7 @@
 
 }
 
-.subscribe__email::placeholder {
+.subscribe__input::placeholder {
   color: var(--color-text-primary);
   font-size: var(--font-size-large);
   opacity: 1;
@@ -48,11 +48,12 @@
   width: 27px;
 }
 
-.subscribe__email {
+.subscribe__input {
   border: none;
   outline: none;
   font-size: var(--font-size-large);
   font-weight: var(--font-weight-body);
+  width: 100%;
 }
 
 .subscribe__button {
@@ -62,8 +63,4 @@
   font-size: var(--font-size-large);
   font-weight: var(--font-weight-body);
   border-radius: var(--radius-xl);
-}
-
-.subscribe__button:hover {
-  background: #5b21b6;
 }
