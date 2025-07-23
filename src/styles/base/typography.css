@@ -11,6 +11,7 @@ body {
   max-width: 40px;
 }
 
+
 .slider__btn {
   width: 100px;
   height: 100px;
@@ -58,14 +59,32 @@ body {
   font-style: italic;
 }
 
-.card {
-  border-radius: var(--radius-xl);
-  background-color: var(--color-background);
-  border: 1px solid var(--color-border);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+@media (max-width: 768px) {
+  .logo__brand {
+    font-size: var(--font-size-medium);
+  }
+
+  .slider__logo {
+    max-width: 30px;
+  }
+
+  body {
+    font-size: var(--font-size-xs);
+  }
+}
+
+@media (max-width: 480px) {
+  .logo__brand {
+    font-size: var(--font-size-xs);
+  }
+
+  .slider__logo {
+    max-width: 20px;
+  }
+
+  body {
+    font-size: var(--font-size-xsmall);
+  }
 }
 
 .card {
@@ -81,7 +100,7 @@ body {
 
 .card:hover {
   box-shadow:var(--shadow-hover);
-  transform: scale(1.1);
+  transform: var(--transform-hover);
 }
 
 .purple-button {  
@@ -91,7 +110,7 @@ body {
 .purple-button:hover {
   box-shadow: var(--shadow-hover);
   background-color: var(--color-button-hover);
-  transform: scale(1.1);
+  transform: var(--transform-hover);
 }
 
 .white-button {
@@ -100,7 +119,7 @@ body {
 
 .white-button:hover {
   box-shadow: var(--shadow-hover);
-  transform: scale(1.1);
+  transform: var(--transform-hover);
 }
 
 .link:hover {

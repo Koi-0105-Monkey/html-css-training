@@ -19,6 +19,9 @@
   --font-body: 'Inter', sans-serif;
   --font-sub: 'ABeeZee', sans-serif;
 
+  --font-size-xxsmall: 7px;
+  --font-size-xsmall: 9px;
+  --font-size-xs: 11px;
   --font-size-base: 13px;
   --font-size-small: 14px;
   --font-size-medium: 18px;

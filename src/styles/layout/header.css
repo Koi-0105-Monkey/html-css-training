@@ -10,6 +10,7 @@
 .site-header__logo {
   display: flex;
   gap: 16px;
+  align-items: center;
 }
 
 
@@ -23,6 +24,18 @@
   color: var(--color-text-secondary);
   font-size: var(--font-size-small);
   font-family: var(--font-body);
+}
+
+@media (max-width: 768px) {
+  .site-header__link {
+    font-size: var(--font-size-xs);
+  }
+}
+
+@media (max-width: 480px) {
+  .site-header__link {
+    font-size: var(--font-size-xxsmall);
+  }
 }
 
 .site-header__link--home {

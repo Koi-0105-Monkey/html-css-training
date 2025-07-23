@@ -1,7 +1,7 @@
 .subscribe {
   background-color: #FACD4914;
   max-width: var(--max-width-container);
-  margin: 64px auto;
+  margin: 100px auto;
   padding: 128px 0;
   border-radius: var(--radius-xl);
   text-align: center;

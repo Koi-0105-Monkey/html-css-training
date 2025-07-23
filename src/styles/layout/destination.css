@@ -8,7 +8,6 @@
 }
 
 .destination__header {
-  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -20,6 +19,14 @@
   font-weight: var(--font-weight-body);
 }
 
+.destination__card {
+  max-width: 350px;
+  min-width: 320px;
+}
+
+.destination__card-image {
+  width: 100%;
+}
 
 .destination__row {
   display: flex;
@@ -35,7 +42,6 @@
 .destination__list-card {
   display: flex;
   gap: 32px;
-  width: 100%;
 }
 
 
@@ -53,6 +59,6 @@
 .destination__card-rate {
     color: var(--color-highlight);
 }
-.destination__card-rate img {
+.destination__card-rate-icon {
     width: 24px;
 }
