@@ -30,7 +30,6 @@
   max-width: 220px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
   text-align: center;
 }
 
@@ -42,4 +41,44 @@
 
 .service-card__text {
   max-width: 220px;
+}
+
+@media (max-width: 950px) {
+  .service {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service__header {
+    text-align: center;
+    max-width: 800px;
+  }
+
+  .service__list {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .service-card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .service-card {
+    padding: 32px;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service__list {
+    flex-direction: column;
+    gap: 24px;
+  }
 }
