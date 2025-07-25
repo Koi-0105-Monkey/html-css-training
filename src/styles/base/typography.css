@@ -2,7 +2,7 @@ body {
   font-family: var(--font-heading);
   background-color: var(--color-background);
   color: var(--color-text-primary);
-  line-height: var(--line-height-base);
+  line-height: var(--line-height-mobile);
   font-weight: var(--font-weight-body);
   font-size: var(--font-size-base);
 }
@@ -13,13 +13,12 @@ body {
 }
 
 .slider__logo {
-  max-width: 40px;
+  max-width: 30px;
 }
 
-
 .slider__btn {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: var(--radius-full);
   background-color: var(--color-background);
   border: 1px solid var(--color-border);
@@ -42,7 +41,7 @@ body {
 
 .title {
   color: var(--color-heading);
-  font-size: var(--font-size-xxxlarge);
+  font-size: var(--font-size-xxlarge);
   line-height: var(--line-height-tight);
   font-weight: var(--font-weight-body);
 }
@@ -52,11 +51,11 @@ body {
   font-family: var(--font-body);
   color: var(--color-text-secondary);
   line-height: var(--line-height-relaxed);
-  font-size: var(--font-size-medium);
+  font-size: var(--font-size-small);
 }
 
 .logo__brand {
-  font-size: var(--font-size-logo);
+  font-size: var(--font-size-large);
   font-family: var(--font-sub);
   color: var(--color-heading);
   font-style: italic;
@@ -113,17 +112,31 @@ body {
   border: 0;
 }
 
-@media (max-width: 780px) {
-  .title {
-    font-size: var(--font-size-xxlarge);
+@media (min-width: 559px) {
+  body {
+    line-height: var(--line-height-base);
+    line-height: var(--line-height-base);
   }
 
   .description {
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-medium);
   }
 
+
+}
+
+@media (min-width: 780px) {
+
   .slider__btn {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .logo__brand {
+    font-size: var(--font-size-logo);
+  }
+
+  .slider__logo {
+    max-width: 40px;
   }
 }
