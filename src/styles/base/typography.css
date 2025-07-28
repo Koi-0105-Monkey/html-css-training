@@ -13,7 +13,7 @@ body {
 }
 
 .slider__logo {
-  max-width: 30px;
+  max-width: 40px;
 }
 
 .slider__btn {
@@ -55,10 +55,11 @@ body {
 }
 
 .logo__brand {
-  font-size: var(--font-size-large);
+  font-size: var(--font-size-logo);
   font-family: var(--font-sub);
   color: var(--color-heading);
   font-style: italic;
+  font-weight: var(--font-weight-body);
 }
 
 .card {
@@ -110,33 +111,4 @@ body {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
-}
-
-@media (min-width: 559px) {
-  body {
-    line-height: var(--line-height-base);
-    line-height: var(--line-height-base);
-  }
-
-  .description {
-    font-size: var(--font-size-medium);
-  }
-
-
-}
-
-@media (min-width: 780px) {
-
-  .slider__btn {
-    width: 100px;
-    height: 100px;
-  }
-
-  .logo__brand {
-    font-size: var(--font-size-logo);
-  }
-
-  .slider__logo {
-    max-width: 40px;
-  }
 }
