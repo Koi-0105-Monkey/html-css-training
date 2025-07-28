@@ -24,11 +24,12 @@
   --font-size-xs: 11px;
   --font-size-base: 13px;
   --font-size-small: 14px;
+  --font-size-small-xl: 16px;
   --font-size-medium: 18px;
   --font-size-large: 23px;
   --font-size-xslarge: 35px;
   --font-size-xlarge: 38px;
-  --font-size-xxlarge: 43px;
+  --font-size-xxlarge: 40px;
   --font-size-xxxlarge: 48px;
   --font-size-hero: 64px;
   --font-size-logo: 25px;
@@ -43,6 +44,7 @@
 
   --radius-full: 100px;
   --radius-xl: 32px;
+  --radius-sm: 30px;
   --shadow-sm: 0 10px 30px #00000012;
   --shadow-md: 0 30px 40px rgba(0, 0, 0, 0.05);
   --shadow-lg: 0 8px 20px rgba(0, 0, 0, 0.12);
